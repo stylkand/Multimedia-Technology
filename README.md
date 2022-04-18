@@ -12,8 +12,14 @@ This repository contains an implementation of a simple **Hangman** game with it'
 
 
 **Details:**
-- I used Eclipse IDE environment to develop the game 
+- Eclipse IDE environment to develop the game
+- JavaFX to create the GUI
+- no CSS
 
+## 🖥**Specifications**
+- Eclipse 4.22.0 
+- Java SE-11
+- gson 2.8.5.jar file
 
-Project's assignement and report are written in greek.
+Project's assignment and report are written in greek.
 
