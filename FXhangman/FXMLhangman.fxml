@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLhangmanController">
+   <children>
+      <MenuBar prefHeight="28.0" prefWidth="807.0" AnchorPane.bottomAnchor="572.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Application">
+            <items>
+              	  <MenuItem fx:id="m11" mnemonicParsing="false" onAction="#m11_action" text="Start" />
+                  <MenuItem fx:id="m12" mnemonicParsing="false" onAction="#m12_action" text="Load" />
+                  <MenuItem fx:id="m13" mnemonicParsing="false" onAction="#m13_action" text="Create" />
+                  <MenuItem fx:id="m14" mnemonicParsing="false" onAction="#m14_action" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Details">
+            <items>
+              <MenuItem fx:id="m21" mnemonicParsing="false" onAction="#m21_action" text="Dictionary" />
+                  <MenuItem fx:id="m22" mnemonicParsing="false" onAction="#m22_action" text="Rounds" />
+                  <MenuItem fx:id="m23" mnemonicParsing="false" onAction="#m23_action" text="Solution" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.22625792319172489, 0.6662506308461524" layoutX="6.0" layoutY="28.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="76.0" prefWidth="599.0">
+               <children>
+                  <Label fx:id="textLabel1" layoutX="38.0" layoutY="14.0" prefHeight="28.0" prefWidth="230.0" />
+                  <Label fx:id="textLabel2" layoutX="38.0" layoutY="49.0" prefHeight="28.0" prefWidth="230.0" />
+                  <Label fx:id="textLabel3" layoutX="38.0" layoutY="84.0" prefHeight="28.0" prefWidth="230.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="599.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" prefHeight="188.92799423437518" prefWidth="599.0399817187506" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="textLabel4" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="51.0" layoutY="14.0" prefHeight="54.0" prefWidth="300.0" wrapText="true">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font></Label>
+                              <ImageView fx:id="hangman_image" fitHeight="104.0" fitWidth="157.0" layoutX="120.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="64.0" prefWidth="401.0">
+                           <children>
+                              <Label fx:id="textLabel5" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="40.0" layoutY="23.0" prefHeight="294.14399102343776" prefWidth="396.28798790625035" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane focusTraversable="true" layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="139.0" prefWidth="599.0">
+               <children>
+                  <ComboBox fx:id="combo1" layoutX="46.0" layoutY="30.0" onMouseClicked="#clicked_combo1" prefWidth="150.0" promptText="Position" visibleRowCount="26" />
+                  <Button fx:id="button" layoutX="357.0" layoutY="65.0" mnemonicParsing="false" onAction="#button_pressed" prefHeight="28.0" prefWidth="97.0" text="PRESS" />
+                  <ComboBox fx:id="combo2" layoutX="46.0" layoutY="102.0" onMouseClicked="#clicked_combo2" prefWidth="150.0" promptText="Letter" visibleRowCount="26" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
