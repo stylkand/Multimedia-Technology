@@ -8,7 +8,7 @@
 
 ## 📋**Description**
 
-This repository contains an implementation of a simple **Hangman** game with it's basic functions. 
+This repository contains an implementation of a simple **Hangman** game with basic functionalities.
 
 
 **Details:**
@@ -21,5 +21,5 @@ This repository contains an implementation of a simple **Hangman** game with it'
 - Java SE-11
 - gson 2.8.5.jar file
 
-Project's assignment and report are written in greek.
+Assignment and report are written in greek.
 
